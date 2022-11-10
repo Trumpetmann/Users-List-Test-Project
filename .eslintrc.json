@@ -29,6 +29,8 @@
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
     "react/react-in-jsx-scope": "off",
+    "func-names": "off",
+    "prefer-rest-params": "off",
     "react/prop-types": 0,
     "max-len": "off",
     "react/jsx-indent-props": "off",

@@ -3,7 +3,7 @@
     display:flex;
     align-items: center;
     height: 70px;
-    padding: 0 5px;
+    padding: 0 10px;
     max-width: 900px;
     color: rgba(128, 128, 128, 0.68);
     border-bottom: 1px solid rgba(128, 128, 128, 0.2);
@@ -16,6 +16,11 @@ button {
     color: inherit;
     font-family: inherit;
     cursor: pointer;
+    padding: 0;
+}
+
+.list-header span {
+    padding: 0 5px;
 }
 
 .list-header span:nth-child(1) {
