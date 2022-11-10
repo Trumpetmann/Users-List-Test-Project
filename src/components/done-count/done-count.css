@@ -1,0 +1,7 @@
+.done-count {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 10px 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,35 @@
+.list-header {
+    font-size: 14px;
+    display:flex;
+    align-items: center;
+    height: 70px;
+    padding: 0 5px;
+    max-width: 900px;
+    color: rgba(128, 128, 128, 0.68);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.list-header span:nth-child(1) {
+    width: 17%;
+}
+.list-header span:nth-child(2) {
+    width: 18%;
+}
+.list-header span:nth-child(3) {
+    width: 24%;
+}
+.list-header span:nth-child(4) {
+    width: 21%;
+}
+.list-header span:nth-child(5) {
+    width: 20%;
+}

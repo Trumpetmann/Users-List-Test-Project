@@ -1,0 +1,45 @@
+.person-details {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+a {
+    color: cadetblue;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+
+.person-details span {
+    height: 40px;
+}
+.person-details span:nth-child(1) {
+    width: 17%;
+}
+.person-details span:nth-child(2) {
+    width: 18%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.person-details span:nth-child(3) {
+    width: 24%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.person-details span:nth-child(4) {
+    width: 21%;
+}
+.person-details span:nth-child(5) {
+    width: 20%;
+}
