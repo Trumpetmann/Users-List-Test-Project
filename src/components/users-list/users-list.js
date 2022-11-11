@@ -5,7 +5,13 @@ import PersonDetails from '../person-details'
 import './users-list.css'
 
 function UsersList({ personsData, isLoading, error }) {
-  if (error) return <h2>We have a problem</h2>
+  if (error) {
+    return (
+      <div className="error">
+        <h2>We have a problem</h2>
+      </div>
+    )
+  }
 
   let elements
   if (isLoading) {

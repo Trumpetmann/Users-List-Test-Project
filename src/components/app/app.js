@@ -77,7 +77,7 @@ export default class App extends Component {
     const newArr = arr.map((el) => ({
       id: el.id,
       name: el.name,
-      email: `mailto:${el.email}`,
+      email: el.email,
       address: `${el.address.city} ${el.address.street} ${el.address.suite}`,
       phone: el.phone,
       company: el.company.name,
@@ -125,7 +125,7 @@ export default class App extends Component {
         <AppHeader getData={this.getData} debounce={this.debounce} />
         <ListHeader nameSort={this.nameSort} />
         <UsersList personsData={personsData} isLoading={isLoading} error={error} />
-        <DoneCount doneCount={this.doneCount} isLoading={isLoading} />
+        <DoneCount doneCount={this.doneCount} isLoading={isLoading} error={error} />
       </div>
     )
   }

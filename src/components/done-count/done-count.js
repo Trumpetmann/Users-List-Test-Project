@@ -1,8 +1,11 @@
 import React from 'react'
 import './done-count.css'
 
-function DoneCount({ doneCount, isLoading }) {
-  const count = isLoading ? null : <span className="done-count">Итого {doneCount()}</span>
+function DoneCount({ doneCount, isLoading, error }) {
+  let count = <span className="done-count">Итого {doneCount()}</span>
+  if (isLoading || error) {
+    count = null
+  }
   return <div>{count}</div>
 }
 
