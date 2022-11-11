@@ -5,6 +5,9 @@
 
 Команда для запуска: npm start 
 
-Запуск тестов: npm test
+Запуск тестов: 
+```
+npm test
+```
 
 Ссылка на развернутое приложение: https://users-list-test-project-trumpetmann.vercel.app/
