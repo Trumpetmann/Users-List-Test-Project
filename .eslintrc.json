@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "ignorePatterns": ["node_modules", "dist", "build"],
   "extends": [
@@ -11,18 +12,24 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "airbnb",
-    "airbnb/hooks"
+    "airbnb/hooks",
+    "plugin:testing-library/react"
   ],
   "overrides": [
+    {
+      "files": [",**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+      "extends": ["plugin:testing-library/react"]
+    }
   ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier", "import"],
+  "plugins": ["react", "prettier", "import", "testing-library"],
   "rules": {
-    "jsx-a11y/click-events-have-key-events" : "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "comma-dangle": "off",
     "indent": "off",
     "prettier/prettier": "error",
     "linebreak-style": [0, "unix"],

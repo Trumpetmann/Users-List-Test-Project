@@ -6,7 +6,7 @@ function AppHeader({ getData, debounce }) {
   return (
     <header>
       <h1>Список пользователей</h1>
-      <input className="new-todo" onChange={getData} placeholder="Поиск по ФИО" />
+      <input onChange={getData} placeholder="Поиск по ФИО" />
     </header>
   )
 }
